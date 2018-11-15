@@ -1,4 +1,4 @@
-Magento Facebook Chat
+# Magento Facebook Chat
 
 Magento Facebook Chat by Meetanshi integrates Facebook messenger with Magento to provide live support through instant communication to the users.
 

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.1">
+    <default>
+        <reference name="content" before="-">
+            <block type="facebookchat/messenger" name="fb_chat" template="facebookchat/messenger_script.phtml" ifconfig="facebookchat/general/facebookchat_enable"/>
+        </reference>
+    </default>
+</layout>

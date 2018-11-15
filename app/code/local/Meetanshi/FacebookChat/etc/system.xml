@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <meetanshi translate="label">
+            <label>
+                <![CDATA[<img src="https://meetanshi.com/media/logo.png" alt="Meetanshi" height="20" style="vertical-align:middle;"/>]]></label>
+            <sort_order>100</sort_order>
+        </meetanshi>
+    </tabs>
+    <sections>
+        <facebookchat module="adminhtml" translate="label">
+            <class>separator-top</class>
+            <label>Facebook Chat</label>
+            <tab>meetanshi</tab>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>0</show_in_website>
+            <show_in_store>0</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>Configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <facebookchat_enable translate="label">
+                            <label>Facebook Chat</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                        </facebookchat_enable>
+                        <app_id translate="label">
+                            <label>Facebook App ID</label>
+                            <frontend_type>Text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <validate>required-entry</validate>
+                            <depends>
+                                <facebookchat_enable>1</facebookchat_enable>
+                            </depends>
+                            <comment><![CDATA[]]></comment>
+                        </app_id>
+                        <page_id translate="label">
+                            <label>Facebook Page ID</label>
+                            <frontend_type>Text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <validate>required-entry</validate>
+                            <depends>
+                                <facebookchat_enable>1</facebookchat_enable>
+                            </depends>
+                            <comment><![CDATA[]]></comment>
+                        </page_id>
+                        <theme_color translate="label">
+                            <label>Theme Color</label>
+                            <frontend_type>Text</frontend_type>
+                            <validate>color</validate>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <depends>
+                                <facebookchat_enable>1</facebookchat_enable>
+                            </depends>
+                        </theme_color>
+                        <login_text translate="label">
+                            <label>Login Greeting Text</label>
+                            <frontend_type>Text</frontend_type>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <depends>
+                                <facebookchat_enable>1</facebookchat_enable>
+                            </depends>
+                        </login_text>
+                        <logout_text translate="label">
+                            <label>Logout Greeting Text</label>
+                            <frontend_type>Text</frontend_type>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <depends>
+                                <facebookchat_enable>1</facebookchat_enable>
+                            </depends>
+                        </logout_text>
+                    </fields>
+                </general>
+            </groups>
+        </facebookchat>
+    </sections>
+</config>
